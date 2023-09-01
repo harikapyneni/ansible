@@ -1,0 +1,9 @@
+#creating connection between servers ansible(workstation instance) to node1
+#playbook contain list of plays always starts with - (hyphen)
+
+- name: ping the node
+  hosts: mongodb
+  #this is list of tasks/modules/collections
+  tasks: 
+  - name: pinging the server
+    ansible.builtin.ping:
