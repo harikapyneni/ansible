@@ -1,0 +1,15 @@
+#installing nginx in playbook
+- name: install and run nginx
+  hosts: mongodb
+  become: yes
+  tasks:
+    - name: install nginx
+      #this is the module/collection for installing (yum)
+      ansible.builtin.yum:
+        name: nginx
+        state: installed
+    - name: start nginx
+      #this is module/collection for starting nginx (service)
+      ansible.builtin.service:
+        name: nginx
+        state: started
