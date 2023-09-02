@@ -2,7 +2,6 @@
 - name: print the text
   hosts: mongodb
   tasks:
-    - name: print "hello world"
+    - name: print hello world
       ansible.builtin.debug:
-        name: "hello world"
         msg: "hi this is harika"
