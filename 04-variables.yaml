@@ -11,3 +11,4 @@
     - name: print variables
       ansible.builtin.debug:
         msg: "Trainer is {{TRAINER}}, Course Duration is {{DURATION}}"
+        
