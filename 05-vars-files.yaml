@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: local host # managing ansible server itself
+  hosts: localhost # managing ansible server itself
   vars_files:
   - variables.yaml
   tasks:
