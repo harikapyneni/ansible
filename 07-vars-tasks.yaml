@@ -7,7 +7,7 @@
   tasks:
   - name: inherit values fron Play level or Parent
     ansible.builtin.debug:
-      msg: "Money: {{MONEY}}, Land {{LAND}}"
+      msg: "Money: {{MONEY}}, Land: {{LAND}}"
   #these variables are of Task Level or Children
   - name: inherit values from play level and ADD and OVERRIDE 
     vars:
@@ -15,4 +15,3 @@
       HOUSES: "3 houses"
     ansible.builtin.debug:
       msg: "Money: {{MONEY}}, Land: {{LAND}}, Houses: {{HOUSES}}"
-      
