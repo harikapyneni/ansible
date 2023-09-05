@@ -3,5 +3,5 @@
   hosts: localhost
   tasks:
   - name: variables from commandline
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "the value of variable is : {{COURSE}}" # here we can give this COURSE variable value in output after pull
