@@ -3,4 +3,4 @@ roboshop-us-dev-db-mongodb-01.ops2ai.cloud
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
-MONGO_DB=catogreries 
+MONGO_DB=catgories 
