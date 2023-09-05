@@ -1,0 +1,8 @@
+# you can give variables key and value in the output 
+- name: variables from CommandLine
+  hosts: localhost
+  tasks:
+  - name: variables from commandline
+    ansible.built.debug:
+      msg: "course is : {{COURSE}}" # here we can give this COURSE variable value in output after pull
+      
