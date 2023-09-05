@@ -5,7 +5,7 @@
   - MONEY: "100000 RS"
     LAND: "100 hectors"
   tasks:
-  - name: inherit values fron Play level or Parent
+  - name: inherit values from Play level or Parent
     ansible.builtin.debug:
       msg: "Money: {{MONEY}}, Land: {{LAND}}"
   #these variables are of Task Level or Children
