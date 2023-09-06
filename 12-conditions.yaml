@@ -15,5 +15,12 @@
     # in json validation, the ERROR status shows exit status as rc:1 --false,exits. if exit status rc:0 --true notexit,runs.
     ansible.builtin.debug:
       msg: "{{output.rc}}" # output.rc means (output-->rc) ie inside output in exectution there is rc=1, we need it to print
+    #until here, in the execution: shows msg : "1" in green=success
+  #now we create roboshop as we got confirmation that user doesnot exist 
+  - name: create user roboshop
+    become: yes #to give sudo/root access to create user, this is only for this task 
+    ansible.builtin.user:
+      name: roboshop
+      when: output.rc !=0
   
   
