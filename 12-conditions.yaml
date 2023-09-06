@@ -4,9 +4,9 @@
   tasks:
   - name: check user roboshop exists or not
     ansible.builtin.command: id roboshop
-      register: output # output is variable
+    register: output # output is variable
     ignore_errors: true
-  - name: print output variable
+  - name: print command output
     ansible.builtin.debug:
       msg: "output is : {{output}}"
   
