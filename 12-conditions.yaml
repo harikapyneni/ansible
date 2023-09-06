@@ -21,6 +21,6 @@
     become: yes #to give sudo/root access to create user, this is only for this task 
     ansible.builtin.user:
       name: roboshop
-      when: output.rc !=0
+    when: output.rc !=0
   
   
