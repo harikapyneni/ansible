@@ -1,0 +1,11 @@
+# in note book 4 : this program is about which variable is executed first
+# we test it by addind NAME variable in all variable types ie in inventory,vars_files,vars play level,vars task level,vars-args,vars-prompt,variables
+
+
+# 1. command line variables (vars-args) we give variable in output command line
+# 2. task level
+# 3. vars_files (variable.yaml)
+# 4. prompt 
+# 5. play level
+# 6. inventory
+# 7. Roles (not yet discussed)
