@@ -3,7 +3,6 @@
 
 
 [mongodb]
-172.31.43.158
 roboshop-us-dev-db-mongodb-01.ops2ai.cloud
 
 [mongodb:vars]
