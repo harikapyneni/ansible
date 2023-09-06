@@ -5,8 +5,12 @@
   - name: check user roboshop exists or not
     ansible.builtin.command: id roboshop
     register: output # output is variable
+     # when you want to run linux commands directly i.e in the case ansible module not available
      # until here,if we execute the command : it shows ERROR and exit without running the command in execution. 
+     # when the user does not exists, ansible treating this failure and comeout by default
      # so we give (ignore_errors= true) ,this means it runs the command and ignores the ERROR! without exit in execution.
+     
+    
     ignore_errors: true
   - name: print command output # we are printing output variable to test
     ansible.builtin.debug:
