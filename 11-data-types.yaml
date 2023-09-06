@@ -9,9 +9,9 @@
     - aws
     - docker
   - EXPERIENCE : #map
-   devops: 3
-   aws: 4
-   dockers: 3
+    devops: 3
+    aws: 4
+    dockers: 3
   tasks:
   - name: print number variable
     ansible.builtin.debug:
