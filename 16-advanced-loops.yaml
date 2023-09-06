@@ -10,3 +10,4 @@
     - {name: 'nginx', state: 'absent'} #absent means remove the package
     - {name: 'postfix', state: 'installed'} 
     - {name: 'mailx', state: 'installed'}
+    - {name: 'cyrus-sasl-plain', state: 'installed'}
