@@ -5,14 +5,15 @@
   - name: check user roboshop exists or not
     ansible.builtin.command: id roboshop
     register: output # output is variable
-     # until here,if we execute the command shows: ERROR and exited without running the command. 
-     # so we give ignore_errors= true , this means it runs the execution without exit and it ignores the ERROR!
+     # until here,if we execute the command : it shows ERROR and exit without running the command in execution. 
+     # so we give (ignore_errors= true) ,this means it runs the command and ignores the ERROR! without exit in execution.
     ignore_errors: true
   - name: print command output # we are printing output variable to test
     ansible.builtin.debug:
       msg: "output is : {{output}}" 
   - name: print exit status
-    # in json validation, the ERROR status shows exit status as rc:1 --false exits. if exit status rc:0 --true notexit n runs.
+    # in json validation, the ERROR status shows exit status as rc:1 --false,exits. if exit status rc:0 --true notexit,runs.
     ansible.builtin.debug:
-      msg: "{{output.rc}}" # variable.rc  
+      msg: "{{output.rc}}" # output.rc means (output-->rc) ie inside output in exectution there is rc=1, we need it to print
+  
   
